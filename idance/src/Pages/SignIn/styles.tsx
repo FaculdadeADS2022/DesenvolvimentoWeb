@@ -19,24 +19,23 @@ export const ContainerEsquerda = styled.div`
 `
 
 export const ContainerDireita = styled.form`
-    width: 45vw;
-    height: 90vh;
-    background-color: #FAFAFA;
+    width: 50%;
+    height: 90% ;
+    background-color: #ffffff;
     flex-direction: row;
     border-radius:10px;
     opacity: 80%;
 `
 
 export const ContainerLogin = styled.div`
-    width: 80%;
-    height: 30%;
-    background-color: #FAFAFA;
+    width: 50%;
+    height: 50%;
+    background-color: #ffffff;
     flex-direction: row;
     align-items: center;
     margin-top: 12ch;
-    margin-left: 8ch;
     margin-right: 20ch;
-    opacity: 100%;
+    margin-left: 32ch;
 `
 
 export const title = styled.h1`
@@ -46,7 +45,8 @@ export const title = styled.h1`
     text-align: center;
     max-width: 500px;
     text-transform: uppercase;
-    padding-bottom: 0.7ch;
+    padding-bottom: 1.5ch;
+    position: center;
     color: rgb(125, 38, 207);
 `
 
@@ -69,36 +69,6 @@ export const labelSecundario = styled.div`
     justify-content: space-between;
 `
 
-export const usuarioInput = styled.input`
-    color: black;
-    width: 100%;
-    font-size: 1em;
-    height: 30px;
-    background: #EBE4E4AF;
-    border-radius: 5px;
-    &:hover {
-    opacity: 0.7;
-    }
-    &:active{
-    opacity: 1;
-    }
-`
-
-export const SenhaInput = styled.input`
-    color: black;
-    width: 100%;
-    font-size: 1em;
-    height: 30px;
-    background: #EBE4E4AF;
-    border-radius: 5px;
-    &:hover {
-    opacity: 0.7;
-    }
-    &:active{
-    opacity: 1;
-    }
-`
-
 export const botao = styled.button`
     color: #FFFFFF;
     width: 100%;
@@ -109,7 +79,7 @@ export const botao = styled.button`
     border: 2px solid #0E99F5;
     background-color: #0E99F5;
     align-self: center;
-    margin-top: 5px;
+    margin-top: 10px;
     cursor: pointer;
 
     &:hover {
@@ -139,7 +109,7 @@ export const labelEsqueceuSenha = styled.a`
     font-size: 13px;
     cursor: pointer;
     display: flex;
-    margin-left:230px;
+    padding-left: 27ch;
     &:hover {
     opacity: 0.7;
     }
@@ -153,7 +123,7 @@ export const labelCadastreSe = styled.a`
     color: #1100ff;
     font-family: 'Prompt';
     font-size: 13px;
-    margin-right: 258px;
+    margin-right:263px;
     cursor: pointer;
     display: flex;
     &:hover {

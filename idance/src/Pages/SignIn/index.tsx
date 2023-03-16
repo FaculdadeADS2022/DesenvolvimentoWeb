@@ -2,7 +2,8 @@ import { FieldError, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import * as S from './styles';
-import { Input } from '../../components';
+import { Input } from '../../components/SignIn';
+import { useNavigate } from "react-router-dom";
 
 type SignInData = {
     username: string,
@@ -26,6 +27,8 @@ export const SignIn = () => {
         }, 0);
         console.log(data);
     }
+
+    const navigate = useNavigate ();
 
     return(
         <S.ContainerPrincipal>
@@ -71,7 +74,7 @@ export const SignIn = () => {
                 <S.labelSecundario>
 
                 Não tem uma conta?
-                <S.labelCadastreSe>
+                <S.labelCadastreSe onClick={() =>navigate("/Register")}>
                     Cadastre-se
                 </S.labelCadastreSe>
 

@@ -1,40 +1,30 @@
 import styled from "styled-components"
-
 export const ContainerPrincipal = styled.main`
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-image: url('https://getwallpapers.com/wallpaper/full/5/c/c/1000855-cool-dance-backgrounds-1920x1080-for-iphone-5.jpg');
+    background-image: url('https://th.bing.com/th/id/R.d9f57f438b9346455860cc1856281fdb?rik=L5Nr1R32IHd7tQ&pid=ImgRaw&r=0');
     justify-content: center;
 `
 
-export const ContainerEsquerda = styled.div`
-    width: 45vw;
-    height: 90vh;
-    background-color: rgb(125, 38, 207);
+export const ContainerCentral = styled.div`
+    width: 30%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
     align-items: center;
     border-radius:10px;
+    opacity: 90%;
 `
 
-export const ContainerDireita = styled.form`
-    width: 45vw;
-    height: 90vh;
-    background-color: #FAFAFA;
-    flex-direction: row;
-    border-radius:10px;
-    opacity: 80%;
-`
-
-export const ContainerLogin = styled.div`
-    width: 80%;
-    height: 30%;
-    background-color: rgb(125, 38, 207);
+export const ContainerLogin = styled.form`
+    width: 70%;
+    height: 70%;
+    background-color: rgb(255, 255, 255);
     flex-direction: row;
     align-items: center;
-    margin-top: 12ch;
-    margin-left: 8ch;
+    margin-left: 10.8ch;
     margin-right: 20ch;
     opacity: 100%;
 `
@@ -46,8 +36,10 @@ export const title = styled.h1`
     text-align: center;
     max-width: 500px;
     text-transform: uppercase;
-    padding-bottom: 0.7ch;
-    color: rgb(255, 255, 255);
+    padding-bottom: 1.3ch;
+    color: rgb(125, 38, 207);
+    margin-left: 0.7ch;
+    margin-top: 0.3ch;
 `
 
 export const labelPrincipal = styled.label`
@@ -69,36 +61,6 @@ export const labelSecundario = styled.div`
     justify-content: space-between;
 `
 
-export const usuarioInput = styled.input`
-    color: black;
-    width: 100%;
-    font-size: 1em;
-    height: 30px;
-    background: #EBE4E4AF;
-    border-radius: 5px;
-    &:hover {
-    opacity: 0.7;
-    }
-    &:active{
-    opacity: 1;
-    }
-`
-
-export const SenhaInput = styled.input`
-    color: black;
-    width: 100%;
-    font-size: 1em;
-    height: 30px;
-    background: #EBE4E4AF;
-    border-radius: 5px;
-    &:hover {
-    opacity: 0.7;
-    }
-    &:active{
-    opacity: 1;
-    }
-`
-
 export const botao = styled.button`
     color: #FFFFFF;
     width: 100%;
@@ -106,10 +68,10 @@ export const botao = styled.button`
     font-style: bold;
     padding: 0.25em 1em;
     border-radius: 3px;
-    border: 2px solid #0E99F5;
-    background-color: #0E99F5;
+    border: 2px solid rgb(125, 38, 207);
+    background-color: rgb(125, 38, 207);
     align-self: center;
-    margin-top: 5px;
+    margin-top: 7ch;
     cursor: pointer;
 
     &:hover {
@@ -121,39 +83,37 @@ export const botao = styled.button`
     }
 `
 
-export const imgBackEsquerda = styled.img`
-    opacity: 90%;
-    width: 97%;
-    height: 97%;
-    margin: 1ch; 
-    border-radius: 15px;
-    image-rendering: optimizeQuality;
-`
-
-export const checkBox = styled.input.attrs({ type: "checkbox" })``
-
-export const labelEsqueceuSenha = styled.a`
-    text-decoration: underline;
-    color: #1100ff;
-    font-family: 'Prompt';
-    font-size: 13px;
+export const btnEntrarComGoogle = styled.button`
+    color: #FFFFFF;
+    width: 235px;
+    height: 35px;
+    font-size: 1.1em;
+    font-style: bold;
+    padding: 0.25em 1em;
+    border-radius: 3px;
+    border-color: #2f95ee;
+    align-self: center;
+    margin-top: 1ch;
+    background-image: url('https://th.bing.com/th/id/OIP.URHIfM4brh2J1334CuvHpwAAAA?pid=ImgDet&rs=1');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     cursor: pointer;
-    display: flex;
-    margin-left:230px;
     &:hover {
     opacity: 0.7;
     }
-    &:active{
+
+    &:active {
     opacity: 1;
     }
 `
 
-export const labelCadastreSe = styled.a`
+export const labelFazerLogin = styled.a`
     text-decoration: underline;
     color: #1100ff;
     font-family: 'Prompt';
     font-size: 13px;
-    margin-right: 258px;
+    margin-right: 54%;
     cursor: pointer;
     display: flex;
     &:hover {

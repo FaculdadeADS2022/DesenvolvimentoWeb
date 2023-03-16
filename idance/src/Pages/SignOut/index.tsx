@@ -1,18 +1,24 @@
-import { FieldError, useForm } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import * as S from './styles';
-import { Input } from '../../components';
+import { Input } from '../../components/SignOut';
+import { useNavigate } from "react-router-dom";
 
 type SignOutData = {
     username: string,
     password: string,
-    rememberme: boolean
+    email: string,
+    telefone: string,
+    confirmPassword: string
 };
 
 const schema = yup.object().shape({
-    username: yup.string().required('O usuário é obrigatório!'),
-    password: yup.string().required('A senha é obrigatória!')
+    username: yup.string().required('Usuário inválido ou já utilizado.'),
+    password: yup.string().required('Informe uma senha.'),
+    email: yup.string().required('Informe um email válido.'),
+    telefone: yup.string().required('Informe um telefone válido!'),
+    confirmPassword: yup.string().oneOf([yup.ref('password')], 'As senhas não são iguais!')
 });
 
 export const Register = () => {
@@ -20,66 +26,82 @@ export const Register = () => {
         resolver: yupResolver(schema)
     });
 
-    const handleSignIn = (data: SignOutData) => {
+    const handleSignOut = (data: SignOutData) => {
         setTimeout(() => {
             console.log(data);
         }, 0);
         console.log(data);
     }
 
+    const navigate = useNavigate ();
+
     return(
         <S.ContainerPrincipal>
 
-        <S.ContainerEsquerda>
+        <S.ContainerCentral>
             <S.title>Cadastro</S.title>
 
-            <S.ContainerLogin>
+            <S.ContainerLogin onSubmit={handleSubmit(handleSignOut)}>
 
                 <Input
-                    label='Usuário'
-                    placeholder='Informe seu usuário'
+                    label='Nome*'
+                    placeholder='Usuário'
                     error={errors.username}
                     {...register('username')}
                 />
 
                 <Input
-                    label='Senha'
-                    placeholder='Informe sua senha'
+                    label='Email*'
+                    placeholder='Email'
+                    error={errors.email}
+                    {...register('email')}
+                />
+
+                <Input
+                    label='Telefone*'
+                    placeholder='Telefone'
+                    error={errors.telefone}
+                    {...register('telefone')}
+                />
+
+                <Input
+                    label='Senha*'
+                    placeholder='senha'
                     error={errors.password}
                     type={"password"}
                     {...register('password')}
                 />
 
-                <S.labelSecundario>
-                    <S.checkBox 
-                        {...register('rememberme')}
-                    />Lembrar login
-                    <S.labelEsqueceuSenha>
-                        Esqueceu a senha?
-                    </S.labelEsqueceuSenha>
-                </S.labelSecundario>
+                <Input
+                    label='Repita a Senha*'
+                    placeholder='Confirme a senha'
+                    error={errors.confirmPassword}
+                    type={"password"}
+                    {...register('confirmPassword')}
+                />
 
                 <S.botao type='submit'>
-                    Entrar
+                    Cadastrar
                 </S.botao>
+
+                <S.labelPrincipal>
+
+                    Ou
+
+                </S.labelPrincipal>
+
+                <S.btnEntrarComGoogle type='button'/>
 
                 <S.labelSecundario>
 
-                Não tem uma conta?
-                <S.labelCadastreSe>
-                    Cadastre-se
-                </S.labelCadastreSe>
+                    Ja possui uma conta?
+                    <S.labelFazerLogin onClick={() =>navigate("/")}>Entrar</S.labelFazerLogin>
 
                 </S.labelSecundario>
 
             </S.ContainerLogin>
 
-        </S.ContainerEsquerda>
-
-        <S.ContainerDireita onSubmit={handleSubmit(handleSignIn)}>
-
-
-        </S.ContainerDireita>
+        </S.ContainerCentral>
 
     </S.ContainerPrincipal>
     )
