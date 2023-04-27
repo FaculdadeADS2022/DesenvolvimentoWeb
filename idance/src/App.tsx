@@ -1,20 +1,28 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { SignIn } from './Pages/SignIn';
-import { Register } from './Pages/SignOut';
+import { BrowserRouter } from 'react-router-dom';
+
+import { ThemeProvider } from 'styled-components';
+import { AppProviders } from './hooks';
+
+import { Routes } from './routes';
+
+import { GlobalStyle } from './styles/global';
+
+import { defaultTheme } from './styles/themes/default';
 
 function App() {
+    return (
+    <ThemeProvider theme={defaultTheme}>
 
-  return (
-    <>
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<SignIn/>} />
-        <Route path='/Register' element={<Register/>} />
-      </Routes>
-    </BrowserRouter>
-    </>
-  );
+        <AppProviders>
+            <BrowserRouter>
+                <Routes />
+            </BrowserRouter>
+        </AppProviders>
+
+        <GlobalStyle />
+    </ThemeProvider>
+    );
 }
 
 export default App;

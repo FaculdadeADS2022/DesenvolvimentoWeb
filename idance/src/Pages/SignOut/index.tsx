@@ -3,7 +3,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import * as S from './styles';
 import { Input } from '../../components/SignOut';
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 type SignOutData = {
     username: string,
@@ -32,8 +32,6 @@ export const Register = () => {
         }, 0);
         console.log(data);
     }
-
-    const navigate = useNavigate ();
 
     return(
         <S.ContainerPrincipal>
@@ -95,7 +93,7 @@ export const Register = () => {
                 <S.labelSecundario>
 
                     Ja possui uma conta?
-                    <S.labelFazerLogin onClick={() =>navigate("/")}>Entrar</S.labelFazerLogin>
+                    <S.labelFazerLogin href='/'>Entrar</S.labelFazerLogin>
 
                 </S.labelSecundario>
 

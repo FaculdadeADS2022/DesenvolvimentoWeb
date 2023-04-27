@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import styled from "styled-components"
 export const ContainerPrincipal = styled.main`
     width: 100vw;
@@ -14,18 +15,19 @@ export const ContainerCentral = styled.div`
     height: 80%;
     background-color: rgb(255, 255, 255);
     align-items: center;
+    justify-content: center;
+    flex-direction: row;
     border-radius:10px;
     opacity: 90%;
 `
 
 export const ContainerLogin = styled.form`
-    width: 70%;
-    height: 70%;
     background-color: rgb(255, 255, 255);
     flex-direction: row;
     align-items: center;
-    margin-left: 10.8ch;
-    margin-right: 20ch;
+    justify-content: center;
+    margin-left: 10ch;
+    margin-right: 10ch;
     opacity: 100%;
 `
 

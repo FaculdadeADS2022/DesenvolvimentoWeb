@@ -11,8 +11,8 @@ export const ContainerPrincipal = styled.main`
 `
 
 export const ContainerEsquerda = styled.div`
-    width: 45vw;
-    height: 90vh;
+    width: 45%;
+    height: 90%;
     background-color: rgb(125, 38, 207);
     align-items: center;
     border-radius:10px;
@@ -22,20 +22,20 @@ export const ContainerDireita = styled.form`
     width: 50%;
     height: 90% ;
     background-color: #ffffff;
-    flex-direction: row;
+    display: flax;
+    flex-direction: column;
     border-radius:10px;
     opacity: 80%;
 `
 
 export const ContainerLogin = styled.div`
-    width: 50%;
-    height: 50%;
     background-color: #ffffff;
     flex-direction: row;
     align-items: center;
-    margin-top: 12ch;
+    justify-content: center;
+    margin-top: 10ch;
     margin-right: 20ch;
-    margin-left: 32ch;
+    margin-left: 20ch;
 `
 
 export const title = styled.h1`

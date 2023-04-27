@@ -1,14 +1,14 @@
-import { FieldError, useForm } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import * as S from './styles';
 import { Input } from '../../components/SignIn';
-import { useNavigate } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
+import { useAuth } from '../../hooks/auth';
 
 type SignInData = {
     username: string,
     password: string,
-    rememberme: boolean
 };
 
 const schema = yup.object().shape({
@@ -17,24 +17,28 @@ const schema = yup.object().shape({
 });
 
 export const SignIn = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm<SignInData>({
+    const { register, handleSubmit, formState } = useForm<SignInData>({
         resolver: yupResolver(schema)
     });
 
-    const handleSignIn = (data: SignInData) => {
-        setTimeout(() => {
-            console.log(data);
-        }, 0);
-        console.log(data);
-    }
+    const errors = formState.errors;
 
-    const navigate = useNavigate ();
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const { signIn } = useAuth();
+
+    let from = location.state?.from?.pathname || "/";
+
+    const handleSignIn = async ({ username, password }: SignInData) => {
+        await signIn({ email: username, password }, () => navigate(from, { replace: true }));
+    }
 
     return(
         <S.ContainerPrincipal>
 
         <S.ContainerEsquerda>
-            <S.imgBackEsquerda src={require('../../Images/logo.jpg')}/>
+            <S.imgBackEsquerda src={require('../../assets/logo.jpg')}/>
         </S.ContainerEsquerda>
 
         <S.ContainerDireita onSubmit={handleSubmit(handleSignIn)}>
@@ -59,9 +63,7 @@ export const SignIn = () => {
                 />
 
                 <S.labelSecundario>
-                    <S.checkBox 
-                        {...register('rememberme')}
-                    />Lembrar login
+                    <S.checkBox />Lembrar login
                     <S.labelEsqueceuSenha>
                         Esqueceu a senha?
                     </S.labelEsqueceuSenha>
@@ -74,9 +76,7 @@ export const SignIn = () => {
                 <S.labelSecundario>
 
                 Não tem uma conta?
-                <S.labelCadastreSe onClick={() =>navigate("/Register")}>
-                    Cadastre-se
-                </S.labelCadastreSe>
+                <NavLink to='/register'> Cadastre-se </NavLink>
 
                 </S.labelSecundario>
 
