@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="af95271f-1217-4876-9c02-17dcfa34b092" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Fundamentos-Exemplo/fundamentos-react" beforeDir="false" afterPath="$PROJECT_DIR$/../Fundamentos-Exemplo/fundamentos-react" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/public/Logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/@types/style.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/Pages/Dashboard/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/Pages/SignIn/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/Pages/SignIn/styles.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/Pages/SignOut/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/Pages/SignOut/styles.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/Pages/User/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/assets/BackgroundSignOut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/assets/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/assets/neon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/components/Header/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/components/SignIn/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/components/SignIn/style.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/components/SignOut/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/components/SignOut/style.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/components/input/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/components/input/styles.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/constants/global.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/hooks/auth.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/hooks/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/layouts/DefaultLayout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/routes/RequireAuth.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/routes/RequireNotAuth.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/routes/Router.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/routes/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/service/Api.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/setupTests.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/styles/global.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/src/styles/themes/default.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../idance/yarn.lock" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2QcphjedvzdNA3J6p8XtKDqUBwE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="TasksApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.heliton.tasks.TasksApplication" />
+      <module name="tasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.heliton.tasks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="af95271f-1217-4876-9c02-17dcfa34b092" name="Changes" comment="" />
+      <created>1685662849341</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685662849341</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
